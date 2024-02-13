@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { About } from "./Compontes/About";
+import { Home } from "./Compontes/Home";
+import { Navbaar } from "./Compontes/Navbaar";
+import { Courses } from "./Compontes/Courses";
+import { SingUp } from "./Compontes/SingUp";
+import { Login } from "./Compontes/Login";
+import { Contact } from "./Compontes/Contact";
+import CoursesDetails from "./Compontes/CoursesDetails/CoursesDetails";
+import Instructor from "./Compontes/Instructor/Instructor";
+import InstructorInfo from "./Compontes/InstructorInf/InstructorInfo";
+import Cart from "./Compontes/cart/Cart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <div>
+          <Navbaar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/instructor" element={<Instructor />} />
+            <Route path="/instinfo" element={<InstructorInfo />} />
+            <Route path="/contactdetials" element={<CoursesDetails />} />
+            <Route path="/signup" element={<SingUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </div>
+      </div>
+    </>
   );
 }
 
