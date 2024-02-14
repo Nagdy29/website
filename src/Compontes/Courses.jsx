@@ -70,15 +70,21 @@ export const Courses = () => {
           viewport={{ once: false, amount: 0.4 }}
           className="catagory d-flex align-items-center justify-content-center"
         >
-          <div className="container row mx-5">
+          <div className="container row mx-2">
             <div className="col-lg-6 col-md-12 card-courses  ">
-              <div className="my-3 position-relative courses-cat">
-                <img src={c1} alt="" className="w-75" />
-                <div className="bg-light w-25 position-absolute my-1 px-1 mx-2 py-2 end-0 bottom-0 text-center text-courses">
-                  <h2>Web Design</h2>
-                  <p>49 Courses</p>
+              <Link className="text-decoration-none" to="/coursesgatogry">
+                <div>
+                  <div className="my-3 position-relative courses-cat">
+                    <img src={c1} alt="" className="w-75" />
+                    <div className="bg-light w-25 position-absolute my-1 px-1 mx-2 py-2 end-0 bottom-0 text-center text-courses">
+                      <h2 className="text-decoration-none text-black">
+                        Web Design
+                      </h2>
+                      <p>49 Courses</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className="col-lg-6 col-md-12 card-courses ">
               <div className="my-3 position-relative courses-cat">
@@ -120,7 +126,7 @@ export const Courses = () => {
                 <Col lg="3" md="4" className="shadow-lg">
                   <div className="single__free__course">
                     <div className="free__course__img mb-3 mt-2">
-                      <Link to="/contactdetials">
+                      <Link to="/coursedetails">
                         <img src={c6} alt="" className="w-100" />
                       </Link>
                       <p className="mt-1 fw-bold position-absolute end-0 text-info">

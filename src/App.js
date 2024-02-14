@@ -11,27 +11,25 @@ import CoursesDetails from "./Compontes/CoursesDetails/CoursesDetails";
 import Instructor from "./Compontes/Instructor/Instructor";
 import InstructorInfo from "./Compontes/InstructorInf/InstructorInfo";
 import Cart from "./Compontes/cart/Cart";
+import CoursesGategory from "./Compontes/CoursesGategory/CoursesGategory";
 
 function App() {
   return (
     <>
-      <div>
-        <div>
-          <Navbaar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/instructor" element={<Instructor />} />
-            <Route path="/instinfo" element={<InstructorInfo />} />
-            <Route path="/contactdetials" element={<CoursesDetails />} />
-            <Route path="/signup" element={<SingUp />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </div>
-      </div>
+      <Navbaar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/instructor" element={<Instructor />} />
+        <Route path="/insInfo" element={<InstructorInfo />} />
+        <Route path="/coursedetails" element={<CoursesDetails />} />
+        <Route path="/coursesgatogry" element={<CoursesGategory />} />
+        <Route path="/signup" element={<SingUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </>
   );
 }

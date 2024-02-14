@@ -36,7 +36,7 @@ export const Home = () => {
   return (
     <>
       <div>
-        <div className="container-fluid ">
+        <div className="">
           <div
             id="carouselExampleRide"
             class="carousel slide"
@@ -370,13 +370,10 @@ export const Home = () => {
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
                 <h4>
-                  <a
-                    href="https://e-pora-next.vercel.app/instructor"
-                    className="text-decoration-none name"
-                  >
+                  <Link to="/instinfo" className="text-decoration-none name">
                     {" "}
                     Ali Reabe
-                  </a>
+                  </Link>
                 </h4>
               </div>
               <div className="d-flex align-items-center gap-5">

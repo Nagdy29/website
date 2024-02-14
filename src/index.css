@@ -26,6 +26,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 .navbar {
   background-color: #fff;
@@ -67,6 +68,11 @@ body {
 
 .pa-head:hover {
   color: #06bbcc;
+}
+
+.sign-Up {
+  position: relative;
+  top: 50px;
 }
 
 .login-img {
@@ -1352,4 +1358,37 @@ button-gogle {
 
 .cart-details {
   min-height: 200px;
+}
+
+/* catogrrry */
+.category-col {
+  width: 600px;
+  background: #fff;
+  height: 190px;
+  border-radius: 20px;
+}
+
+.img-catogry {
+  border-radius: 10px;
+}
+
+.category-col .p-catogry {
+  color: #111;
+  font-size: 16px;
+}
+
+.category-col .p-catogry:hover {
+  color: #0dcaf0;
+}
+
+.icons-catogry {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 600px) {
+  .category-col {
+    height: 25%;
+    /* width: 126%; */
+    display: flex;
+    flex-direction: column;
+  }
 }

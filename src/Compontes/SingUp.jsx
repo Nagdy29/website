@@ -19,9 +19,9 @@ const defaultTheme = createTheme();
 export const SingUp = () => {
   return (
     <>
-      <div className="mx-5 my-5">
+      <div className="mx-5 m-5 sign-Up">
         <ThemeProvider theme={defaultTheme}>
-          <Grid container component="main" sx={{ height: "100vh" }}>
+          <Grid container component="main" sx={{ height: "90vh" }}>
             <CssBaseline />
             <Grid
               className="singup-img"
