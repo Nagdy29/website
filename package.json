@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Nagdy29.github.io/E-learning1",
+  "homepage" : "https://Nagdy29.github.io/ELearninng",
   "name": "e-learn",
   "version": "0.1.0",
   "private": true,
@@ -28,8 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+     "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
