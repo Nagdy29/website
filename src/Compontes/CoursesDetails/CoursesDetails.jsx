@@ -41,15 +41,21 @@ const CoursesDetails = () => {
         <div className="d-flex align-items-center justify-content-center text-details my-3">
           <h2 className="fw-bold">Course information</h2>
         </div>
-        <div className="container row d-flex justify-content-between align-items-center">
-          <div className="col-md-9">
-            <img
-              src={im1}
-              alt=""
-              className="mx-4 my-3 shadow-sm image-details w-100"
-            />
+        <div className="container gap-2 row d-flex justify-content-between align-items-center">
+          <div className="col-xl-9 col-lg-6 col-md-6 col-12 d-flex align-items-center flex-column ">
+            <div>
+              <img
+                src={im1}
+                alt=""
+                className="mx-4 my-3 shadow-sm image-details w-100"
+              />
+              <h2 className="my-4 mx-4 fw-bold">
+                {" "}
+                Master Web Design in Adobe XD: Complete UI/UX Masterclass
+              </h2>
+            </div>
           </div>
-          <div className="col-md-2 card-pricee">
+          <div className="col-xl-2 col-lg-4  col-md-4 col-12 card-pricee">
             <div class="card-price">
               <span class="title">
                 Pro
@@ -123,9 +129,7 @@ const CoursesDetails = () => {
         <div>
           <div className="text-ourcourses  mx-4 my-5 row d-flex justify-content-center">
             <div className="col-md-5">
-              <h1 className="fs-1 text-center shadow-lg mb-4 fw-bolder ">
-                Overview
-              </h1>
+              <h1 className="fs-1 text-center mb-4 fw-bolder ">Overview</h1>
               <h3 className="mb-4 fs-2 fw-medium">
                 Learn WordPress & Elementor for Beginners
               </h3>
@@ -138,9 +142,7 @@ const CoursesDetails = () => {
               </p>
             </div>
             <div className="col-md-5">
-              <h1 className="fs-1 text-center shadow-lg mb-4 fw-bolder ">
-                Reviews
-              </h1>
+              <h1 className="fs-1 text-center mb-4 fw-bolder ">Reviews</h1>
               <div className="Reviews d-flex gap-3 align-items-center">
                 <div>
                   <img src={im2} alt="" />

@@ -29,17 +29,120 @@ body {
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  transition: background-color 0.5s ease;
+  border-bottom: 1px solid #e5eaed;
+  height: 80px;
+  .pa-head {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+  }
+  .btn-singin {
+    color: black !important;
+    border-radius: 20px;
+  }
 }
 
-.navbar {
-  z-index: 1000;
+.navbar.scrolled {
+  background-color: #fff;
+  .pa-head {
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+  }
+  .btn-singin {
+    color: black !important;
+    border-radius: 20px;
+  }
+  .pa-head:hover {
+    color: #06bbcc;
+  }
+}
+@media (max-width: 620px) {
+  .navbar {
+    height: 115px;
+  }
 }
 @media (max-width: 880px) {
   .navbar {
     position: relative !important;
   }
 }
+@media (max-width: 990px) {
+  .collapse {
+    background: #111;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* searchhhhhhhhhh */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 18px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:focus::placeholder {
+  color: rgb(131, 128, 128);
+}
+
+.input:focus,
+.input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid #0dcaf0;
+  width: 290px;
+  cursor: none;
+  padding: 18px 16px 18px 45px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 99px;
+  z-index: -1;
+  fill: #0dcaf0;
+  border: 1px solid #181d38;
+}
+
+.input:focus + .icon,
+.input:not(:placeholder-shown) + .icon {
+  z-index: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* ================================================== */
 
 .shoping-cart {
   border-radius: 123px;
@@ -64,6 +167,9 @@ body {
 
 .p-head {
   color: #06bbcc;
+  font-size: 18px;
+  position: relative;
+  top: 3px;
 }
 
 .pa-head:hover {
@@ -155,6 +261,14 @@ body {
   border-radius: 20px;
 }
 
+.d-block-2 {
+  height: 770px;
+}
+@media (max-width: 880px) {
+  .d-block-2 {
+    height: 100%;
+  }
+}
 .home-text {
   top: 30%;
   left: 250px;
@@ -202,11 +316,11 @@ body {
 }
 
 .about-header {
-  background-image: url("./Images/about\ head.avif");
+  background-image: url("../src/Images//new/about1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 
 .counter__title {
@@ -606,10 +720,11 @@ ul {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .courses-header {
-  background-image: url("./Images/courses-h.webp");
+  background-image: url("../src/Images/new/courses.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
 
 .courses-cat img,
@@ -865,18 +980,16 @@ button-gogle {
   transform: scale(1.02);
 }
 .contact-header {
-  background-image: url("./Images/about\ head.avif");
+  background-image: url("../src/Images/new/contact.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
 
 /* Courses Details */
 .text-details {
   color: #06bbcc;
-}
-.text-details:hover {
-  transform: scale(0.6);
 }
 
 .image-details {
@@ -1134,10 +1247,9 @@ button-gogle {
   padding: 5px;
 }
 .text-ourcourses h1 {
-  background-color: #06bbcc;
+  color: #06bbcc;
   width: 200px;
-  border-radius: 25px;
-  color: #f2f8f9;
+  border-bottom: 1px solid black;
 }
 
 .Reviews img {
@@ -1156,10 +1268,11 @@ button-gogle {
 /* insssssstructors */
 
 .Instructor-header {
-  background-image: url("../src/Images/ins1.jpg");
+  background-image: url("../src/Images/new/inst.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
 
 .box-inst {
@@ -1239,7 +1352,12 @@ button-gogle {
 
 .tp-instructor__content .name {
   font-size: 24px;
-  color: #06bbcc;
+  color: #111;
+  transition: ease-in;
+}
+.tp-instructor__content .name:hover {
+  font-size: 24px;
+  color: #0dcaf0;
 }
 
 .tp-instructor__content h4::before {
@@ -1254,7 +1372,9 @@ button-gogle {
   margin: auto;
 }
 
-.tp-instructor-icons .icon {
+.tp-instructor-icons .icon-info {
+  position: relative;
+  bottom: 5px;
   color: #06bbcc;
 }
 .tp-instructor-icons h3 {
@@ -1268,11 +1388,23 @@ button-gogle {
   right: 35px;
 }
 
-.social-inst .icons {
+.social-inst .social-icons {
   cursor: pointer;
-  color: #06bbcc;
+  color: #111;
 }
 
+.social-inst .social-icons:nth-child(1):hover {
+  cursor: pointer;
+  color: #0d6efd;
+}
+.social-inst .social-icons:nth-child(2):hover {
+  cursor: pointer;
+  color: #0d6efd;
+}
+.social-inst .social-icons:nth-child(3):hover {
+  cursor: pointer;
+  color: red;
+}
 /* infoooooooooooooooooooooo */
 
 .ins-image {
@@ -1304,13 +1436,13 @@ button-gogle {
 .ins-info::before {
   position: absolute;
   content: "";
-  width: 44%;
-  height: 2px;
+  width: 42%;
+  height: 4px;
   /* color: #111; */
-  top: 76%;
+  top: 80%;
   bottom: 53px;
   background: #24262b;
-  left: 663px;
+  left: 569px;
 }
 
 @media (max-width: 1200px) {
@@ -1328,6 +1460,13 @@ button-gogle {
 
 .inst-dec {
   top: 150px;
+}
+@media (max-width: 760px) {
+  .ins-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 660px) {
   .ins-info {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import "react-slideshow-image/dist/styles.css";
-import h1 from "../Images/home.avif";
-import h3 from "../Images/h3.webp";
+import h1 from "../../src/Images/new/home1.jpg";
+import h3 from "../../src/Images/new/h2.webp";
 import { Link } from "react-router-dom";
 import { Company } from "./Company";
 import { Container, Row, Col } from "reactstrap";
@@ -11,16 +11,10 @@ import c1 from "../Images/course-3.jpg";
 import c2 from "../Images/cat-2.jpg";
 import c3 from "../Images/kids-learning.png";
 import c4 from "../Images/kids-learning.png";
-import { IoLogoFacebook } from "react-icons/io5";
-import { IoLogoInstagram } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
-import av1 from "../Images/clients/21.jpg";
-import av2 from "../Images/clients/6.jpg";
 import { FaBook } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-import av3 from "../Images/clients//4.jpg";
-import av4 from "../Images/clients/3.jpg";
 import c5 from "../Images/close-up-hand-writing-notebook-top-view_23-2148888824.avif";
 import c6 from "../Images/home.avif";
 import { motion } from "framer-motion";
@@ -72,7 +66,7 @@ export const Home = () => {
                 </div>
               </div>
               <div class="carousel-item active position-relative">
-                <img src={h3} class="d-block w-100" alt="..." />
+                <img src={h3} class="d-block-2 w-100" alt="..." />
                 <div class="image-overlay"></div>
                 <div className="position-absolute  home-text">
                   <h3 className="display-6 my-2">Best Online Courses</h3>
@@ -336,61 +330,26 @@ export const Home = () => {
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
                 <h4>
-                  <Link to="/instinfo" className="text-decoration-none name">
-                    {" "}
+                  <Link to="/insInfo" className="text-decoration-none name">
                     Ali Reabe
                   </Link>
                 </h4>
               </div>
               <div className="d-flex align-items-center gap-5">
                 <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <FaPlayCircle size={25} className="icon" />
+                  <FaPlayCircle size={28} className="icon-info" />
                   <h3>35 Classes</h3>
                 </div>
                 <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <PiStudentBold size={25} className="icon" />
+                  <PiStudentBold size={28} className="icon-info" />
                   <h3>291+ Students</h3>
                 </div>
               </div>
               <div className="social-inst position-absolute">
                 <div className="d-flex flex-column gap-2">
-                  <FaFacebookF size={30} className="icons" />
-                  <FaLinkedin size={30} className="icons" />
-                  <FaYoutube size={30} className="icons" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6 col-12 mb-5">
-            <div className="tp-instructor position-relative">
-              <div>
-                <img src={in1} alt="" />
-              </div>
-              <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
-                <span>Instructor</span>
-                <h4>
-                  <Link to="/instinfo" className="text-decoration-none name">
-                    {" "}
-                    Ali Reabe
-                  </Link>
-                </h4>
-              </div>
-              <div className="d-flex align-items-center gap-5">
-                <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <FaPlayCircle size={25} className="icon" />
-                  <h3>35 Classes</h3>
-                </div>
-                <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <PiStudentBold size={25} className="icon" />
-                  <h3>291+ Students</h3>
-                </div>
-              </div>
-              <div className="social-inst position-absolute">
-                <div className="d-flex flex-column gap-2">
-                  <FaFacebookF size={30} className="icons" />
-                  <FaLinkedin size={30} className="icons" />
-                  <FaYoutube size={30} className="icons" />
+                  <FaFacebookF size={30} className="social-icons" />
+                  <FaLinkedin size={30} className="social-icons" />
+                  <FaYoutube size={30} className="social-icons" />
                 </div>
               </div>
             </div>
@@ -403,30 +362,58 @@ export const Home = () => {
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
                 <h4>
-                  <a
-                    href="https://e-pora-next.vercel.app/instructor"
-                    className="text-decoration-none name"
-                  >
-                    {" "}
+                  <Link to="/insInfo" className="text-decoration-none name">
                     Ali Reabe
-                  </a>
+                  </Link>
                 </h4>
               </div>
               <div className="d-flex align-items-center gap-5">
                 <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <FaPlayCircle size={25} className="icon" />
+                  <FaPlayCircle size={28} className="icon-info" />
                   <h3>35 Classes</h3>
                 </div>
                 <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
-                  <PiStudentBold size={25} className="icon" />
+                  <PiStudentBold size={28} className="icon-info" />
                   <h3>291+ Students</h3>
                 </div>
               </div>
               <div className="social-inst position-absolute">
                 <div className="d-flex flex-column gap-2">
-                  <FaFacebookF size={30} className="icons" />
-                  <FaLinkedin size={30} className="icons" />
-                  <FaYoutube size={30} className="icons" />
+                  <FaFacebookF size={30} className="social-icons" />
+                  <FaLinkedin size={30} className="social-icons" />
+                  <FaYoutube size={30} className="social-icons" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mb-5">
+            <div className="tp-instructor position-relative">
+              <div>
+                <img src={in1} alt="" />
+              </div>
+              <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
+                <span>Instructor</span>
+                <h4>
+                  <Link to="/insInfo" className="text-decoration-none name">
+                    Ali Reabe
+                  </Link>
+                </h4>
+              </div>
+              <div className="d-flex align-items-center gap-5">
+                <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
+                  <FaPlayCircle size={28} className="icon-info" />
+                  <h3>35 Classes</h3>
+                </div>
+                <div className="d-flex gap-2 align-items-center tp-instructor-icons ">
+                  <PiStudentBold size={28} className="icon-info" />
+                  <h3>291+ Students</h3>
+                </div>
+              </div>
+              <div className="social-inst position-absolute">
+                <div className="d-flex flex-column gap-2">
+                  <FaFacebookF size={30} className="social-icons" />
+                  <FaLinkedin size={30} className="social-icons" />
+                  <FaYoutube size={30} className="social-icons" />
                 </div>
               </div>
             </div>
@@ -450,7 +437,7 @@ export const Home = () => {
                 <Col lg="3" md="4" className="shadow-lg">
                   <div className="single__free__course">
                     <div className="free__course__img mb-3 mt-2">
-                      <Link to="/contactdetials">
+                      <Link to="/coursedetails">
                         <img src={c6} alt="" className="w-100" />
                       </Link>
                       <p className="mt-1 fw-bold position-absolute end-0 text-info">

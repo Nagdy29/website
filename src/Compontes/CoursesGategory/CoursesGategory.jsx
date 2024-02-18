@@ -6,9 +6,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { FaCalendarCheck } from "react-icons/fa";
 import { Container, Row, Col } from "reactstrap";
 import { FaBook } from "react-icons/fa";
-import { IoMdPerson } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-import { motion } from "framer-motion";
 import c1 from "../../Images/course-catogry.jpg";
 
 const CoursesGategory = () => {
