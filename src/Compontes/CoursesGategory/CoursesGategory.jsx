@@ -39,6 +39,7 @@ const CoursesGategory = () => {
                       </ol>
                     </nav>
                   </div>
+                  <div className="about-overlay"></div>
                 </div>
               </div>
             </div>

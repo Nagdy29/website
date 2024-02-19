@@ -45,6 +45,7 @@ export const Courses = () => {
                         </li>
                       </ol>
                     </nav>
+                    <div className="about-overlay"></div>
                   </div>
                 </div>
               </div>

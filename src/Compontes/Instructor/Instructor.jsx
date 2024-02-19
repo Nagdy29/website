@@ -5,6 +5,8 @@ import { IoIosPerson } from "react-icons/io";
 import { FaFileAlt } from "react-icons/fa";
 import { FaCalendarCheck } from "react-icons/fa";
 import in1 from "../Images/team-1.jpg";
+import in2 from "../Images/team-4.jpg";
+import in3 from "../Images/team-3.jpg";
 import { FaPlayCircle } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
@@ -18,7 +20,7 @@ const Instructor = () => {
     <>
       <div>
         <div>
-          <div class="container-fluid bg-primary h-75 mb-5  Instructor-header  ">
+          <div class="container-fluid bg-primary  mb-5  Instructor-header  ">
             <div className="">
               <div class="container py-5">
                 <div class="row justify-content-center">
@@ -43,6 +45,7 @@ const Instructor = () => {
                       </ol>
                     </nav>
                   </div>
+                  <div className="about-overlay"></div>
                 </div>
               </div>
             </div>
@@ -129,7 +132,7 @@ const Instructor = () => {
           <div className="col-lg-4 col-md-6 col-12 mb-5">
             <div className="tp-instructor position-relative">
               <div>
-                <img src={in1} alt="" />
+                <img src={in2} alt="" />
               </div>
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
@@ -161,7 +164,7 @@ const Instructor = () => {
           <div className="col-lg-4 col-md-6 col-12 mb-5">
             <div className="tp-instructor position-relative">
               <div>
-                <img src={in1} alt="" />
+                <img src={in3} alt="" />
               </div>
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
