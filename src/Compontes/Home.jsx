@@ -24,6 +24,8 @@ import in1 from "../Images/team-1.jpg";
 import { FaPlayCircle } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
+import in2 from "../Images/team-4.jpg";
+import in3 from "../Images/team-3.jpg";
 import { FaYoutube } from "react-icons/fa";
 
 export const Home = () => {
@@ -357,7 +359,7 @@ export const Home = () => {
           <div className="col-lg-4 col-md-6 col-12 mb-5">
             <div className="tp-instructor position-relative">
               <div>
-                <img src={in1} alt="" />
+                <img src={in2} alt="" />
               </div>
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
@@ -389,7 +391,7 @@ export const Home = () => {
           <div className="col-lg-4 col-md-6 col-12 mb-5">
             <div className="tp-instructor position-relative">
               <div>
-                <img src={in1} alt="" />
+                <img src={in3} alt="" />
               </div>
               <div class="tp-instructor__content d-flex align-items-center justify-content-center my-3 flex-column">
                 <span>Instructor</span>
