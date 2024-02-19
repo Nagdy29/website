@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.d0a4f0d6.css",
+    "main.js": "/website/static/js/main.11be2713.js",
+    "static/media/courses.jpg": "/website/static/media/courses.b2f4b5035092a11e1391.jpg",
+    "static/media/home1.jpg": "/website/static/media/home1.61ff107faeb450e42665.jpg",
+    "static/media/h2.webp": "/website/static/media/h2.93877b3b8464bd89b9d1.webp",
+    "static/media/course-catogry.jpg": "/website/static/media/course-catogry.757ffdf319238ef68e24.jpg",
+    "static/media/4.jpg": "/website/static/media/4.59ca1f360674230bf9cc.jpg",
+    "static/media/kids-learning.png": "/website/static/media/kids-learning.fcd258b6f9310b2dd2af.png",
+    "static/media/3.jpg": "/website/static/media/3.f7abc0c20d1b83f77f27.jpg",
+    "static/media/21.jpg": "/website/static/media/21.d91f6008c8a747bd0b1c.jpg",
+    "static/media/6.jpg": "/website/static/media/6.f8545428754bf7142d2c.jpg",
+    "static/media/team-3.jpg": "/website/static/media/team-3.ea511638364e1cfb9f69.jpg",
+    "static/media/cat-2.jpg": "/website/static/media/cat-2.f7ebf3772415ecaa4706.jpg",
+    "static/media/team-4.jpg": "/website/static/media/team-4.2c2eb82dd68e400f43cc.jpg",
+    "static/media/course-3.jpg": "/website/static/media/course-3.a1c27eb1a3f510840d13.jpg",
+    "static/media/close-up-hand-writing-notebook-top-view_23-2148888824.avif": "/website/static/media/close-up-hand-writing-notebook-top-view_23-2148888824.5f3388ed154bbef19ea6.avif",
+    "static/media/team-1.jpg": "/website/static/media/team-1.df075697e0ef60906dec.jpg",
+    "static/media/home.avif": "/website/static/media/home.a010fafaf131d40d9ad2.avif",
+    "index.html": "/website/index.html",
+    "main.d0a4f0d6.css.map": "/website/static/css/main.d0a4f0d6.css.map",
+    "main.11be2713.js.map": "/website/static/js/main.11be2713.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0a4f0d6.css",
+    "static/js/main.11be2713.js"
+  ]
+}
